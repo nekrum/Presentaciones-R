@@ -1,33 +1,100 @@
 ---
-title: "Presentación con ioslides"
+title: "Presentación con Ioslides"
 output: ioslides_presentation
+knit: (function(inputFile, encoding) {
+  rmarkdown::render(inputFile, encoding = encoding, output_dir = "output") })
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-## R Markdown
+## Necesidad
 
-This is an R Markdown presentation. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+Una de mis tareas pendientes era encontrar la librería que mejor se adaptará a mis necesidades. 
+En distintas ocasiones probe las diferentes librerías disponibles para generar presentaciones **Ioslides**, **Beamer**, 
+**Slidy** y **Reveal**.
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.
+Recientemente en varios talleres y pláticas vi presentaciones en R y me surgio la idea de probar 
+de nuevo y quiza por fin decidirme por alguno de los paquetes.
 
-## Slide with Bullets
+## Intención
 
-- Bullet 1
-- Bullet 2
-- Bullet 3
+Este documento pretende ser una demostración de las capacidades **básicas** de una presentación desarrollada en **Ioslides**. No pretende determinar ni la mejor ni la peor librería,  solo conocer sus capacidades. Por lo tanto
+intentare probar diferentes estructuras y ver el resultado final de las mismas.
 
-## Slide with R Output
+## Que probaré
+
+- Impresión de la salida de R
+- Listas de no númeradas (esta misma)
+- Listas númeradas
+- Gráficos base
+- Gráficos ggplot
+- Gráficos interactivos
+
+## Evaluar
+
+Al final para tomar mi decisión considerare los siguientes puntos:
+
+1. Facilidad de uso
+2. Output obtenido
+3. Estética
+4. Funcionalidad
+5. Velocidad al generar resultado
+6. Configuración
+
+## Salida de comandos de R
+
+Ya que el fin último de crear las presentaciones en R es poder integrar, los resultados y gráficas dentro de la 
+presentación, generemos una serie de comandos:
 
 ```{r cars, echo = TRUE}
-summary(cars)
+set.seed(45)
+variable.azar <- rnorm(30)
+variable.azar
 ```
 
-## Slide with Plot
+## Gráficos base
+
+También es importante la visualización de los gráficos generados en R
 
 ```{r pressure}
-plot(pressure)
+plot(speed ~ dist, cars)
+abline(lm(speed~dist, cars), col = 'red')
 ```
 
+## Graficos ggplot2
+
+De los gráficos que mas uso dentro de mis reportes o clases son aquellos generados en ggplot2
+
+```{r}
+library(ggplot2)
+cars.regresion <- ggplot(cars, aes(speed, dist)) +
+  geom_smooth(method = lm) +
+  geom_point(alpha = 0.2) +
+  theme_minimal()
+cars.regresion
+```
+
+## GGplot2
+
+En ocasiones necesito definir multiples plots en una sola exposición
+
+```{r message=FALSE}
+library(cowplot)
+
+  
+cars.boxplot <- ggplot(reshape2::melt(cars, value.vars = c("dist", "speed")), aes(variable, value)) +
+  geom_boxplot() +
+  theme_minimal()
+plot_grid(cars.regresion, cars.boxplot, ncol = 2, labels = c('A','B'), align = "hv", scale = c(0.9, 0.9))
+```
+
+## Interactivo
+
+Para procesar gráficos interactivos una librería que uso cotidianamente es plotly
+
+```{r message=FALSE}
+library(plotly)
+ggplotly(cars.regresion)
+```
