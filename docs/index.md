@@ -4,6 +4,8 @@ En esta pagina podemos ver el resultado de diferentes librerías y presentacione
 
 ## IoSlides
 
+[Presetnación base][presentacion-ioslides.html]
+
 ## Beamer
 
 ## Slidy
