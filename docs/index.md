@@ -12,22 +12,22 @@ Presentación en **R** con la librería **IoSlides**
 
 Presentaciones realizadas con Beamer (archivo PDF)
 
-[Presetación base][presentacion-beamer.pdf]
+[Presetación base](presentacion-beamer.pdf)
 
 ## Slidy
 
 Presentaciones usando Slidify
 
-[Presetación base][presentacion-slidy.html]
+[Presetación base](presentacion-slidy.html)
 
 ## RevealJS
 
 Presentaciones usando RevealJS
 
-[Presetación base][presentacion-revealjs.html]
+[Presetación base](presentacion-revealjs.html)
 
 ## Xaringan
 
 Presentación usando Xaringan
 
-[Presetación base][presentacion-xaringan.html]
+[Presetación base](presentacion-xaringan.html)
