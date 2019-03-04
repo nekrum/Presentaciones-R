@@ -6,7 +6,7 @@ En esta pagina podemos ver el resultado de diferentes librerías y presentacione
 
 Presentación en **R** con la librería **IoSlides**
 
-[Presetación base][presentacion-ioslides.html]
+[Presetnación base](presentacion-ioslides.html)
 
 ## Beamer
 
