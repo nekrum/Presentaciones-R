@@ -127,22 +127,3 @@ library(plotly)
 ggplotly(cars.regresion)
 ```
 
----
-
-## Impresiones
-
-La sintaxis cambia un poco, deja de usar los títulos y usa guiones `---` para delimitar las diapositivas.
-Tiene muchas opciones de configuración, acepta **footnotes** y **dos columnas** de forma nativa. Al inicio de la 
-diapositiva se puede definir la justificación del texto así como la imagen de fondo. Se pueden agregar notas para el 
-presentador y una ejecución automática con temporizador así como un contador en pantalla.
-
-Ademas se pueden separar elementos para que se muestren paso a paso usando dos guiones en vez de tres. Puede resaltar
-líneas dentro de chunks de código usando asteriscos, llaves dobles e incluso **#<<**. Hasta se pueden declarar rangos de
-página.
-Por último se integra directamente con hojas de estilo (CSS), por lo que es completamente configurabley cuenta con varios
-**temas**.
-
-El tamaño esta por arriba de las **Ioslides** pero no tan grande como la presentación **revealjs**, ademas de que por 
-default el output no es autocontenido. En este caso, cuando el archivo no es autocontenido, no se puede ver en el visor
-de **Rstudio** y solo hasta que se crea un output autocontenido se puede visualizar directamente.
-

@@ -92,14 +92,8 @@ plot_grid(cars.regresion, cars.boxplot, ncol = 2, labels = c('A','B'), align = "
 
 ## Interactivo
 
-> Dado que Beamer tiene un output en PDF no permite generar gráficos interactivos, ademas de que no tienen mucho sentido hacerlo.
+Dado que Beamer tiene un output en PDF no permite generar gráficos interactivos, ademas de que no tienen mucho sentido hacerlo.
 
 
-## Impresiones
 
-Con Beamer podemos tener una presentación en PDF que puede ser leída directamente en cualquier equipo y sin muchos
-contratiempos. Con las limitantes que esto puede tener es un formato estandar y protable. Usando servicios WEB como 
-**SlideShare** o **SpeakerDeck**, que permiten mostrar en línea las diapositivas exportadas en PDF.
 
-Sin embargo necesita una instalación **completa** de Latex para poder generar el archivo PDF, lo que implica una
-instalación de varios megas.
