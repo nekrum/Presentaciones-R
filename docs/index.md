@@ -7,7 +7,7 @@ Espero pueda ser de útilidad para alguien mas y cualquier comentario es bienven
 
 ## IoSlides
 
-Presentaciones en con la librería **IoSlides**.
+Presentaciones con la librería **IoSlides**.
 Hasta el momento me parece la mas sencilla con una resultado bien logrado. Soporta gráficas interactivas, ggplot y una 
 buena detección de sintaxis. Me gusta mucho como centra los gráficos y la transición entre diapositivas. Quiza es la librería
 mas sencilla de implementar en un flujo de trabajo cotidiano.
