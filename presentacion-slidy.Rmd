@@ -99,12 +99,3 @@ Para procesar gráficos interactivos una librería que uso cotidianamente es plo
 library(plotly)
 ggplotly(cars.regresion)
 ```
-
-## Impresiones
-
-Slidy presenta las mismas características que **Ioslides** y permite los gráficos interactivos sin problema alguno.
-Ademas el tamaño de la presentación final es pequeño en comparación con el **html** de **Ioslides**. 
-
-Sin embargo la estructura y estética es un tanto extraña, me parece que no se distribuye bien sobre cada diapositiva y
-la transición así como los colores no estan tan trabajados como en **Ioslides**. De hecho la distribución sobre la 
-diapositiva se debe a los espacios y saltos de línea. Estructurando los parrafos desde **Rmarkdown**.

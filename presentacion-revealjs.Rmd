@@ -98,12 +98,3 @@ Para procesar gráficos interactivos una librería que uso cotidianamente es plo
 library(plotly)
 ggplotly(cars.regresion)
 ```
-
-## Impresiones
-
-Genera una salida mas pesada que **Ioslides** y por ende que **slidy**. El tamaño de la letra hace que una arreglo que 
-funciona en las anteriores presentaciones, no quepa en na diapositiva. Y la parte baja de la misma no es visible, por lo
-menos no sin configuración.
-
-La presentación es bonita y llamativa. La animación que presenta directamente es muy estética, la posibilidad de ver una 
-panorámica de todas las diapositivas parece realmente útil.
