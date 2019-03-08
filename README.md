@@ -1,6 +1,12 @@
 # Comparativa de Presentaciones en R
 
-Código base para crear presentaciones con R, estan escritos en Rmarkdown.
+Código base para crear presentaciones con R, estan escritos en Rmarkdown, para instalar las librerías necesarias
+podemos ejecutar en **Rstudio** o en **R-base**
+
+```
+source('requerimientos.R')
+```
+
 En la carpeta **docs** se crea un sitio para mostrar las presentaciones y pequeños resumenes.
 
 Para mostrar localmente el sitio, se necesita instalar `ruby`, `bundler` y `rake`.
