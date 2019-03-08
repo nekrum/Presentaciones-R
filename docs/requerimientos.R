@@ -1,0 +1,6 @@
+install.packages('cowplot')
+install.packages('ggplot2')
+install.packages('plotly')
+install.packages('revealjs')
+install.packages('rmarkdown')
+install.packages('xaringan')
