@@ -1,4 +1,4 @@
-desc 'run server'
-task :serve do
+desc 'run servidor'
+task :servidor do
 	sh 'bundle exec jekyll serve --host 0.0.0.0 --watch jekyll serve --config _config.yml --baseurl ""'
 end
