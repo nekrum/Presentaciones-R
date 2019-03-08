@@ -32,5 +32,5 @@ Ademas necesitamos un **Rakefile** donde se describa los parametros que ejecuta 
 Para correr el servidor localmente en [http://localhost:4000](http://localhost:4000) ejecutamos:
 
 ```
-bundle exec rake serve
+bundle exec rake servidor
 ```
