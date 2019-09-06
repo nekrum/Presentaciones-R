@@ -34,3 +34,8 @@ Para correr el servidor localmente en [http://localhost:4000](http://localhost:4
 ```
 bundle exec rake servidor
 ```
+## Resultado
+
+Para acceder a la pagina:
+
+https://nekrum.github.io/Presentaciones-R/
